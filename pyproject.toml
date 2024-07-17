@@ -43,7 +43,6 @@ ska-ser-xray = "^0.2.5"
 pytest = "7.3.1"
 pytest-json-report = "^1.5.0"
 pytest-asyncio = "^0.21.1"
-ska-control-model = "^0.3.1"
 requests = "^2.31.0"
 types-requests = "^2.31.0.2"
 

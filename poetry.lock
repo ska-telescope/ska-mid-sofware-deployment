@@ -1641,26 +1641,6 @@ url = "https://pypi.org/simple"
 reference = "PyPI-public"
 
 [[package]]
-name = "ska-control-model"
-version = "0.3.1"
-description = "The SKA control model"
-optional = false
-python-versions = ">=3.7.2,<4.0.0"
-files = [
-    {file = "ska_control_model-0.3.1-py3-none-any.whl", hash = "sha256:81ab7d091c9a02cf504309c2168f834ec0dd8acfeee30d0a2d2deb24165ceaea"},
-    {file = "ska_control_model-0.3.1.tar.gz", hash = "sha256:fa3dea88421f6d159a6c86f55be8b79750b93932ff9f67779fb67a91c85351ed"},
-]
-
-[package.dependencies]
-transitions = ">=0.9.0,<0.10.0"
-typing-extensions = ">=4.3.0,<5.0.0"
-
-[package.source]
-type = "legacy"
-url = "https://artefact.skao.int/repository/pypi-internal/simple"
-reference = "skao"
-
-[[package]]
 name = "ska-ser-sphinx-theme"
 version = "0.1.3"
 description = "A Sphinx ReadTheDocs theme for SKA"
@@ -2079,29 +2059,6 @@ url = "https://pypi.org/simple"
 reference = "PyPI-public"
 
 [[package]]
-name = "transitions"
-version = "0.9.1"
-description = "A lightweight, object-oriented Python state machine implementation with many extensions."
-optional = false
-python-versions = "*"
-files = [
-    {file = "transitions-0.9.1-py2.py3-none-any.whl", hash = "sha256:e76ad7bf44d46bd03bc50f269cebfa5affef28534c92b87b43e60b03d8925864"},
-    {file = "transitions-0.9.1.tar.gz", hash = "sha256:3542c37108e93e2ae5f215208ec5732c94a772937854a102cd7345b967fee61b"},
-]
-
-[package.dependencies]
-six = "*"
-
-[package.extras]
-diagrams = ["pygraphviz"]
-test = ["pytest"]
-
-[package.source]
-type = "legacy"
-url = "https://pypi.org/simple"
-reference = "PyPI-public"
-
-[[package]]
 name = "types-colorama"
 version = "0.4.15.20240311"
 description = "Typing stubs for colorama"
@@ -2455,4 +2412,4 @@ docs = []
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9.2"
-content-hash = "8e7d202c4f84bf4b9f55dce4be781708f8c56549ca83da83692b0fa403aeb769"
+content-hash = "70abb18baf3cffc7327c1b0988c04fdcceeeabb12892b26d9b068ad197217adf"
