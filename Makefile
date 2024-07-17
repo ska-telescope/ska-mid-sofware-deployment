@@ -62,7 +62,6 @@ example-start-server:
 	uvicorn src.ska_cicd_training_pipeline_machinery.main:app --reload
 
 PYTHON_VARS_AFTER_PYTEST = --disable-pytest-warnings
-REPORT_DIR = build/reports
 
 test: python-test
 
