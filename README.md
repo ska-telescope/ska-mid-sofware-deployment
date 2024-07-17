@@ -1,6 +1,10 @@
-# ska-mid-sofware-deployment
+# SKA Mid Sofware Deployment
 
+Welcome to the SKA Mid Software Deployment project.
 
+## Purpose
+
+This repo contains software to be deployed for AA0.5.
 
 ## Getting started
 
