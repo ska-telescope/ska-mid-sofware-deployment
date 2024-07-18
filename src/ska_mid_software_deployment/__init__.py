@@ -1,16 +1,13 @@
-"""
-This package provides tango integration of a Sky Simulator Controller.
-
-It is used in the SKA test equipment hardware.
-"""
+"""This package is used to extract the ska-mid-software-deployment version."""
 
 from os import path
 
 
 def getversion():
-    """Get semver version based on `.release` file value.
+    """Get server version based on `.release` file value.
 
-    :return: the value of the release in semver notation
+    Returns:
+        str: value of the release in server notation
     """
     file_name = ".release"
     basepath = path.dirname(__file__)
