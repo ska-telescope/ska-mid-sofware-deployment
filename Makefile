@@ -23,6 +23,9 @@ include .make/base.mk
 # include local helper makefile targets
 -include resources/localhelpers.mk
 
+# include namespace-specific targets
+-include resources/makefiles/k8s-installs.mk
+
 # include xray support
 include .make/xray.mk
 
