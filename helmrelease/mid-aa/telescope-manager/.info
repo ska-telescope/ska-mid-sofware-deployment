@@ -1,0 +1,6 @@
+# This is the production environment for the SKA Mid AA Telescope Manager Tango Control System. It is where the following products should run:
+- SDP
+- Mid CSP LMC
+- Mid TMC
+- Mid CBF MCS
+- Taranta
