@@ -14,7 +14,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: skatelescope
-  releaseName: ska-mid-itf-dish-lmc-skaxxx
+  releaseName: <milestone>-<facility_name>
   install:
     createNamespace: true
     remediation:

@@ -7,7 +7,7 @@ metadata:
 spec:
   storageNamespace: staging-dish-lmc-ska010
   targetNamespace: staging-dish-lmc-ska010
-  releaseName: ska-mid-itf-dish-ska010
+  releaseName: dish-aiv-miditf
   kubeConfig:
     secretRef:
       key: values.yml
