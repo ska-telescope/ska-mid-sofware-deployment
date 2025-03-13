@@ -18,10 +18,6 @@ include:
   - project: "ska-telescope/templates-repository"
     file: "gitlab-ci/includes/python.gitlab-ci.yml"
 
-  # Docs pages
-  - project: "ska-telescope/templates-repository"
-    file: "gitlab-ci/includes/docs.gitlab-ci.yml"
-
   # Build and publish changelog
   - project: "ska-telescope/templates-repository"
     file: "gitlab-ci/includes/release.gitlab-ci.yml"
