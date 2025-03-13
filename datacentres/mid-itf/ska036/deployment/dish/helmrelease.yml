@@ -7,7 +7,7 @@ metadata:
 spec:
   storageNamespace: dish-lmc-ska036
   targetNamespace: dish-lmc-ska036
-  # releaseName: ska036 # this should remain commented unless we realise we need a separation on per-dish releases.
+  releaseName: dishaiv-miditf # this should remain commented unless we realise we need a separation on per-dish releases.
   kubeConfig:
     secretRef:
       key: values.yml
