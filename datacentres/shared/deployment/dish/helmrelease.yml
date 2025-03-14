@@ -14,7 +14,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: skatelescope
-  releaseName: milestoneXXX-facilityXXX
+  releaseName: system-aiv # This can be either `system-aiv` or `dish-aiv`. Default value set to `system-aiv` on group level, and overwritten on dish level.
   install:
     createNamespace: true
     remediation:
