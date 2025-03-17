@@ -24,5 +24,5 @@ spec:
       valuesKey: publisher_password
       targetPath: global.raw_user_pass
     - kind: Secret
-      name: vault-miditf-dish-ska036-kubeconfig
+      name: vault-miditf-ska036-kubeconfig
       valuesKey: values.yml
