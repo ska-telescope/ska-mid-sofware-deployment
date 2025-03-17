@@ -8,10 +8,6 @@ spec:
   storageNamespace: flux-central-controller
   targetNamespace: flux-central-controller
   releaseName: sut-aiv-miditf
-  kubeConfig:
-    secretRef:
-      key: values.yml
-      name: vault-miditf-central-controller-kubeconfig
   valuesFrom:
     - kind: Secret
       name: vault-miditf-central-controller
