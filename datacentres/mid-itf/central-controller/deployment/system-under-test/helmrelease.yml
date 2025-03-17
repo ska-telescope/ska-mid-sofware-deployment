@@ -5,21 +5,21 @@ metadata:
   name: central-controller
   namespace: flux-services
 spec:
-  storageNamespace: kapb-central-controller
-  targetNamespace: kapb-central-controller
-  releaseName: karel-se-berg-kapb-central-controller
+  storageNamespace: flux-central-controller
+  targetNamespace: flux-central-controller
+  releaseName: sut-aiv-miditf
   kubeConfig:
     secretRef:
       key: values.yml
-      name: vault-midaa-central-controller-kubeconfig
+      name: vault-miditf-central-controller-kubeconfig
   valuesFrom:
     - kind: Secret
-      name: vault-shared-dish
+      name: vault-miditf-central-controller
       valuesKey: values.yml
-    - kind: Secret
-      name: vault-midaa-kapb
-      valuesKey: values.yml
-    - kind: Secret
-      name: vault-car-publisher
-      valuesKey: publisher_password
-      targetPath: global.raw_user_pass
+    # - kind: Secret
+    #   name: vault-midaa-kapb
+    #   valuesKey: values.yml
+    # - kind: Secret
+    #   name: vault-car-publisher
+    #   valuesKey: publisher_password
+    #   targetPath: global.raw_user_pass

@@ -9,7 +9,7 @@ spec:
   sourceRef:
     kind: GitRepository
     name: ska-mid-helmreleases
-  path: .datacentres/mid-itf/central-controller
+  path: .datacentres/mid-itf/central-controller/deployment/system-under-test
   prune: true
   wait: false
   timeout: 1m0s
