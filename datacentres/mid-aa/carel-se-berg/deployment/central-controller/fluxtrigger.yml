@@ -14,6 +14,8 @@ spec:
   wait: false
   timeout: 1m0s
   dependsOn:
+    - name: namespace-dataproducts
+      namespace: flux-services
     - name: pvc-sdp
       namespace: flux-services
     - name: pvc-cbf
