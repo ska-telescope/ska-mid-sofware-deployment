@@ -9,7 +9,7 @@ spec:
   sourceRef:
     kind: GitRepository
     name: ska-mid-helmreleases
-  path: ./datacentres/mid-itf/central-controller/deployment/sdp-namespace
+  path: ./datacentres/mid-itf/central-controller/deployment/sdp-pvc
   prune: true
   wait: false
   timeout: 1m0s

@@ -2,7 +2,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ../../../../shared/deployment/sdp-pvc
+  - ../../../../shared/deployment/pvc
 
 patches:
   - target:
@@ -12,3 +12,6 @@ patches:
       - op: replace
         path: /metadata/namespace
         value: shared-ska-dataproducts
+      - op: replace
+        path: /metadata/name
+        value: flux-central-controller-pvc
