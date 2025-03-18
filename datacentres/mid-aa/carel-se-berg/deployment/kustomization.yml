@@ -9,3 +9,4 @@ resources:
   - namespace-sdp/fluxtrigger.yml
   - namespace-cbf-ec/fluxtrigger.yml
   - namespace-dataproducts/fluxtrigger.yml
+  - pvc-cbf/fluxtrigger.yml
