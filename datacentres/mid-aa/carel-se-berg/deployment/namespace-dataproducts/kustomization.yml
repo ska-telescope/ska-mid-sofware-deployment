@@ -11,4 +11,4 @@ patches:
     patch: |-
       - op: replace
         path: /metadata/name
-        value: namespace-dataproducts
+        value: shared-ska-dataproducts

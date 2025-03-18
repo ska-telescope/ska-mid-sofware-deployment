@@ -11,4 +11,4 @@ patches:
     patch: |-
       - op: replace
         path: /metadata/name
-        value: namespace-cbf-ec
+        value: cbf-engineering-console
