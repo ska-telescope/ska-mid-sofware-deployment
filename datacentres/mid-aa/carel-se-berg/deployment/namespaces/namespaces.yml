@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ska-mid-sdp
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: shared-ska-dataproducts
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cbf-engineering-console

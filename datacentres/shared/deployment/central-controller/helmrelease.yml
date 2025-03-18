@@ -2,7 +2,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: mid-aiv-aaXX
+  name: central-controller
   namespace: flux-services
 spec:
   interval: 10m

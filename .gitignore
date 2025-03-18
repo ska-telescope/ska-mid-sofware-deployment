@@ -41,3 +41,4 @@ sut-config-*.json
 *.tar.gz
 notebook-execution-data
 midaa-values.yml
+dpd-values.yml

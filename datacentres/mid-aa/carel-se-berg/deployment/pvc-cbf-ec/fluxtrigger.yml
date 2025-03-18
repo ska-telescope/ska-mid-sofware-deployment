@@ -2,14 +2,17 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: namespace-dataproducts
+  name: pvc-cbf
   namespace: flux-services
 spec:
   interval: 1m0s
   sourceRef:
     kind: GitRepository
     name: ska-mid-helmreleases
-  path: ./datacentres/mid-aa/carel-se-berg/deployment/namespace-dataproducts
+  path: ./datacentres/mid-aa/carel-se-berg/deployment/pvc-cbf-ec
   prune: true
   wait: false
   timeout: 1m0s
+  dependsOn:
+    - name: namespaces
+      namespace: flux-services

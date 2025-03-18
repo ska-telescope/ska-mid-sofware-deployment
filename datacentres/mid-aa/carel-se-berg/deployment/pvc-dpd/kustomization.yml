@@ -11,4 +11,7 @@ patches:
     patch: |-
       - op: replace
         path: /metadata/namespace
-        value: staging-pvc
+        value: shared-ska-dataproducts
+      - op: replace
+        path: /metadata/name
+        value: shared-dataproduct-pvc
