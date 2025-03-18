@@ -6,3 +6,4 @@ resources:
   - system-under-test/fluxtrigger.yml
   - sdp-pvc/fluxtrigger.yml
   - sdp-namespace/fluxtrigger.yml
+  - dataproducts-namespace/fluxtrigger.yml
