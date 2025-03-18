@@ -4,11 +4,10 @@ kind: Kustomization
 resources:
   - ../../../../shared/deployment/sdp-pvc
 
-# patches:
-#   - path: helmrelease.yml
-#     target:
-#       kind: HelmRelease
-#       namespace: flux-services
+patches:
+  - path: sdp-vis-receive-pvc.yml
+    target:
+      kind: PersistentVolumeClaim
 
 #   - target:
 #       kind: HelmRelease
