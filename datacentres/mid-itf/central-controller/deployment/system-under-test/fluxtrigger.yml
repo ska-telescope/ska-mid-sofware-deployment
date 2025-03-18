@@ -13,3 +13,8 @@ spec:
   prune: true
   wait: false
   timeout: 1m0s
+  dependsOn: 
+    - name: sdp-pvc
+      namespace: flux-services
+    - name: sdp-namespace
+      namespace: flux-services
