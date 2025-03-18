@@ -5,9 +5,9 @@ metadata:
   name: central-controller
   namespace: flux-services
 spec:
-  storageNamespace: kapb-central-controller
-  targetNamespace: kapb-central-controller
-  releaseName: karel-se-berg-kapb-central-controller
+  storageNamespace: ska-mid-central-controller
+  targetNamespace: ska-mid-central-controller
+  releaseName: midaiv-aa05
   kubeConfig:
     secretRef:
       key: values.yml

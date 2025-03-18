@@ -1,0 +1,11 @@
+
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - system-under-test/fluxtrigger.yml
+  - pvc-cbf-ec/fluxtrigger.yml
+  - pvc-sdp/fluxtrigger.yml
+  - namespace-sdp/fluxtrigger.yml
+  - namespace-cbf-ec/fluxtrigger.yml
+  - namespace-dataproducts/fluxtrigger.yml
