@@ -14,7 +14,7 @@ spec:
   wait: false
   timeout: 1m0s
   dependsOn:
-    - name: namespaces
+    - name: namespaces-central-controller
       namespace: flux-services
     - name: pvc-sdp
       namespace: flux-services
