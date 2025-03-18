@@ -18,5 +18,5 @@ spec:
       namespace: flux-services
     - name: pvc-sdp
       namespace: flux-services
-    - name: pvc-cbf
+    - name: pvc-cbf-ec
       namespace: flux-services
