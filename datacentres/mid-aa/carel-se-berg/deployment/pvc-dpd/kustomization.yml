@@ -8,6 +8,8 @@ patches:
   - target:
       kind: PersistentVolumeClaim
       name: pvc
+    options:
+      allowNameChange: true
     patch: |-
       - op: replace
         path: /metadata/namespace
