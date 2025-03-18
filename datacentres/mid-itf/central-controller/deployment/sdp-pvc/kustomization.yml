@@ -11,4 +11,4 @@ patches:
     patch: |-
       - op: replace
         path: /metadata/namespace
-        value: flux-central-controller-pvc
+        value: shared-ska-dataproducts
