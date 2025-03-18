@@ -18,3 +18,5 @@ spec:
       namespace: flux-services
     - name: sdp-namespace
       namespace: flux-services
+    - name: dataproducts-namespace
+      namespace: flux-services
