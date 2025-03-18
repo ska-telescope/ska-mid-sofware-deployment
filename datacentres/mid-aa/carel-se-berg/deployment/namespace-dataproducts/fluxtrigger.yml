@@ -9,7 +9,7 @@ spec:
   sourceRef:
     kind: GitRepository
     name: ska-mid-helmreleases
-  path: ./datacentres/mid-aa/central-controller/deployment/namespace-dataproducts
+  path: ./datacentres/mid-aa/carel-se-berg/deployment/namespace-dataproducts
   prune: true
   wait: false
   timeout: 1m0s
