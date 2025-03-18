@@ -5,14 +5,10 @@ resources:
   - ../../../../shared/deployment/sdp-pvc
 
 patches:
-  - path: sdp-vis-receive-pvc.yml
-    target:
+  - target:
       kind: PersistentVolumeClaim
-
-#   - target:
-#       kind: HelmRelease
-#       namespace: flux-services
-#     patch: |-
-#       - op: replace
-#         path: /metadata/name
-#         value: central-controller
+      name: flux-central-controller-pvc
+    patch: |-
+      - op: replace
+        path: /metadata/namespace
+        value: flux-central-controller-pvc

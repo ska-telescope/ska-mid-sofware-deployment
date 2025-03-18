@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: flux-central-controller-pvc
-  namespace: shared-ska-dataproducts
-  labels:
-    skao.int/clone-pvc: flux-central-controller-pvc
