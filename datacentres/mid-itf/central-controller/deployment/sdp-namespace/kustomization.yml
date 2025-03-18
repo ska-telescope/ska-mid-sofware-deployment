@@ -11,4 +11,4 @@ patches:
     patch: |-
       - op: replace
         path: /metadata/name
-        value: flux-central-controller-pvc
+        value: flux-central-controller-sdp
