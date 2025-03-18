@@ -10,7 +10,7 @@ spec:
   releaseName: sut-aiv-miditf
   valuesFrom:
     - kind: Secret
-      name: vault-miditf-central-controller
+      name: vault-miditf-central-controller-no-hw
       valuesKey: values.yml
     # - kind: Secret
     #   name: vault-midaa-kapb
