@@ -16,7 +16,7 @@ spec:
   dependsOn:
     - name: namespaces-central-controller
       namespace: flux-services
-    - name: shared-dataproduct-pvc
+    - name: pvc-dpd
       namespace: flux-services
     - name: pvc-cbf-ec
       namespace: flux-services
