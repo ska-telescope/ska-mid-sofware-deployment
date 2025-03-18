@@ -11,4 +11,4 @@ patches:
     patch: |-
       - op: replace
         path: /metadata/namespace
-        value: staging-sdp
+        value: staging-pvc
