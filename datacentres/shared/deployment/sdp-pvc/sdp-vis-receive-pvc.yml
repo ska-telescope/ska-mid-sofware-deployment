@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: flux-central-controller-pvc
+  labels:
+    skao.int/clone-pvc: flux-central-controller-pvc
+    skao.int/clone-pvc-namespace: shared-ska-dataproducts
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 2Ti
+  storageClassName: ceph-cephfs
+  volumeMode: Filesystem
