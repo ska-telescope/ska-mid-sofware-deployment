@@ -8,10 +8,6 @@ spec:
   storageNamespace: ska-mid-central-controller
   targetNamespace: ska-mid-central-controller
   releaseName: midaiv-aa05
-  kubeConfig:
-    secretRef:
-      key: values.yml
-      name: vault-midaa-central-controller-kubeconfig
   valuesFrom:
     - kind: Secret
       name: vault-shared-dish
