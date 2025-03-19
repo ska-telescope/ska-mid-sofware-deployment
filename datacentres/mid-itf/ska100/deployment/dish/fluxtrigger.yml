@@ -11,5 +11,5 @@ spec:
     name: ska-mid-helmreleases
   path: ./datacentres/mid-itf/ska100/deployment/dish
   prune: true
-  wait: true
-  timeout: 5m0s
+  wait: false
+  timeout: 1m0s
