@@ -14,7 +14,7 @@ spec:
   wait: false
   timeout: 1m0s
   dependsOn:
-    - name: namespaces
+    - name: namespaces-ska-mid
       namespace: flux-services
     # - name: pvc-dpd
     #   namespace: flux-services

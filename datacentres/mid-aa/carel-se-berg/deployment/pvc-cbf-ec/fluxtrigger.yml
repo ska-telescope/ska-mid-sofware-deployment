@@ -14,5 +14,5 @@ spec:
   wait: false
   timeout: 1m0s
   dependsOn:
-    - name: namespaces-central-controller
+    - name: namespaces-ska-mid
       namespace: flux-services
