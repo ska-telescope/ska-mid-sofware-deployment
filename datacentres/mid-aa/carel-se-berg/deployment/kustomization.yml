@@ -6,3 +6,4 @@ resources:
   - namespaces/fluxtrigger.yml
   - pvc-cbf-ec/fluxtrigger.yml
   - pvc-dpd/fluxtrigger.yml
+  - data-product-dashboard/fluxtrigger.yml

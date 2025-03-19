@@ -1,1 +1,15 @@
-# Helmrelease with values in Vault
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: data-product-dashboard
+  namespace: flux-services
+spec:
+  interval: 10m
+  storageNamespace: shared-ska-dataproducts
+  targetNamespace: shared-ska-dataproducts
+  releaseName: mid-aiv-dpd
+  valuesFrom:
+    - kind: Secret
+      name: vault-midaa-dpd
+      valuesKey: values.yml

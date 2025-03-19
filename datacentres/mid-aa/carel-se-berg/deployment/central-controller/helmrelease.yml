@@ -5,6 +5,7 @@ metadata:
   name: central-controller
   namespace: flux-services
 spec:
+  interval: 10m
   storageNamespace: ska-mid-central-controller
   targetNamespace: ska-mid-central-controller
   releaseName: midaiv-aa05
