@@ -1,0 +1,21 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: ska100-dish
+  namespace: flux-services
+spec:
+  storageNamespace: dish-lmc-ska100
+  targetNamespace: dish-lmc-ska100
+  releaseName: ska-mid-itf-dish-ska100
+  valuesFrom:
+    - kind: Secret
+      name: vault-shared-dish
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-miditf-dish-ska100
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-car-publisher
+      valuesKey: publisher_password
+      targetPath: global.raw_user_pass
