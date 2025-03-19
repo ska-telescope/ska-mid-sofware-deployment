@@ -4,3 +4,9 @@ kind: Kustomization
 resources:
   - ../../../../shared/deployment/data-product-dashboard
   - vault_secrets.yml
+
+patches:
+  - path: helmrelease.yml
+    target:
+      kind: HelmRelease
+      namespace: flux-services
