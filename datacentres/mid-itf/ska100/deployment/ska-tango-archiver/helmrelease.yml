@@ -1,0 +1,29 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: ska100-archiver
+  namespace: flux-services
+spec:
+  storageNamespace: dish-lmc-ska100
+  targetNamespace: dish-lmc-ska100
+  releaseName: archiver
+  kubeConfig:
+    secretRef:
+      key: values.yml
+      name: vault-miditf-ska100-kubeconfig
+  valuesFrom:
+    - kind: Secret
+      name: vault-shared-ska-tango-archiver
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-miditf-dish-ska100-archiver
+      valuesKey: values.yml
+    # - kind: Secret
+    #   name: vault-eda-credentials
+    #   valuesKey: login
+    #   targetPath: archviewer.instances[0].timescale_login
+    # - kind: Secret
+    #   name: vault-eda-credentials
+    #   valuesKey: dbpassword
+    #   targetPath: dbpassword
