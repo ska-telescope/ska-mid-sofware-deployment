@@ -2,14 +2,14 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: ska036-dish
+  name: sdp-namespace
   namespace: flux-services
 spec:
-  interval: 10m0s
+  interval: 1m0s
   sourceRef:
     kind: GitRepository
     name: ska-mid-helmreleases
-  path: ./datacentres/mid-itf/ska036/deployment/dish
+  path: ./datacentres/mid-itf/central-controller/deployment/sdp-pvc
   prune: true
-  wait: true
-  timeout: 5m0s
+  wait: false
+  timeout: 1m0s

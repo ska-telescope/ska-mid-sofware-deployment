@@ -2,14 +2,14 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: skaxxx-dish
+  name: central-controller
   namespace: flux-services
 spec:
   interval: 10m
   timeout: 5m
   chart:
     spec:
-      chart: ska-mid-itf-dish-lmc
+      chart: ska-mid-itf-sut
       version: "25.6.3"
       sourceRef:
         kind: HelmRepository
@@ -23,9 +23,9 @@ spec:
     remediation:
       strategy: "uninstall"
       retries: 3
-  storageNamespace: ska-mid-itf-dish-lmc-skaxxx
-  targetNamespace: ska-mid-itf-dish-lmc-skaxxx
+  storageNamespace: ska-mid-itf-sut
+  targetNamespace: ska-mid-itf-sut
   valuesFrom:
     - kind: Secret
-      name: vault-shared-dish
+      name: vault-shared-sut
       valuesKey: values.yml

@@ -2,14 +2,19 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: ska063-archiver
+  name: data-product-dashboard
   namespace: flux-services
 spec:
   interval: 1m0s
   sourceRef:
     kind: GitRepository
     name: ska-mid-helmreleases
-  path: ./datacentres/mid-aa/ska063/deployment/ska-tango-archiver
+  path: ./datacentres/mid-aa/carel-se-berg/deployment/data-product-dashboard
   prune: true
   wait: false
   timeout: 1m0s
+  dependsOn:
+    - name: namespaces-ska-mid
+      namespace: flux-services
+    # - name: pvc-dpd
+    #   namespace: flux-services

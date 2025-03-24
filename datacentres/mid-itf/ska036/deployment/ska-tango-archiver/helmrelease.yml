@@ -7,7 +7,7 @@ metadata:
 spec:
   storageNamespace: dish-lmc-ska036
   targetNamespace: dish-lmc-ska036
-  releaseName: ska036-archiver
+  releaseName: archiver
   kubeConfig:
     secretRef:
       key: values.yml

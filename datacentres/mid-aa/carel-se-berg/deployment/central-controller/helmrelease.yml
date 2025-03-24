@@ -1,0 +1,22 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: central-controller
+  namespace: flux-services
+spec:
+  interval: 10m
+  storageNamespace: ska-mid-central-controller
+  targetNamespace: ska-mid-central-controller
+  releaseName: midaiv-aa05
+  valuesFrom:
+    - kind: Secret
+      name: vault-shared-dish
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-midaa-kapb
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-car-publisher
+      valuesKey: publisher_password
+      targetPath: global.raw_user_pass

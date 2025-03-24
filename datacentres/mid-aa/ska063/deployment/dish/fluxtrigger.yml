@@ -8,7 +8,7 @@ spec:
   interval: 1m0s
   sourceRef:
     kind: GitRepository
-    name: ska-mid-itf
+    name: ska-mid-helmreleases
   path: ./datacentres/mid-aa/ska063/deployment/dish
   prune: true
   wait: false

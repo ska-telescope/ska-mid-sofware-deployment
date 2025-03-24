@@ -1,0 +1,21 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: central-controller
+  namespace: flux-services
+spec:
+  storageNamespace: flux-central-controller
+  targetNamespace: flux-central-controller
+  releaseName: sut-aiv-miditf
+  valuesFrom:
+    - kind: Secret
+      name: vault-miditf-central-controller-no-hw
+      valuesKey: values.yml
+    # - kind: Secret
+    #   name: vault-midaa-kapb
+    #   valuesKey: values.yml
+    # - kind: Secret
+    #   name: vault-car-publisher
+    #   valuesKey: publisher_password
+    #   targetPath: global.raw_user_pass

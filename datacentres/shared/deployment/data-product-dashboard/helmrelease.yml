@@ -2,15 +2,15 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: skaxxx-dish
+  name: data-product-dashboard
   namespace: flux-services
 spec:
   interval: 10m
   timeout: 5m
   chart:
     spec:
-      chart: ska-mid-itf-dish-lmc
-      version: "25.6.3"
+      chart: ska-sdp-dataproduct-dashboard # Temp Until the DPD chart is correctly published from ITF
+      version: "0.8.0"
       sourceRef:
         kind: HelmRepository
         name: skatelescope
@@ -23,9 +23,5 @@ spec:
     remediation:
       strategy: "uninstall"
       retries: 3
-  storageNamespace: ska-mid-itf-dish-lmc-skaxxx
-  targetNamespace: ska-mid-itf-dish-lmc-skaxxx
-  valuesFrom:
-    - kind: Secret
-      name: vault-shared-dish
-      valuesKey: values.yml
+  storageNamespace: <ska-mid-central-controller>
+  targetNamespace: <ska-mid-central-controller>
