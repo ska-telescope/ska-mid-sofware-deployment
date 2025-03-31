@@ -15,6 +15,9 @@ spec:
       name: vault-midaa-ska001-kubeconfig
   valuesFrom:
     - kind: Secret
+      name: vault-shared-dish
+      valuesKey: values.yml
+    - kind: Secret
       name: vault-midaa-dish-ska001
       valuesKey: values.yml
     - kind: Secret
