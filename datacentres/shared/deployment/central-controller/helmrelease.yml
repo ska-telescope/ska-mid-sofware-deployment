@@ -29,3 +29,6 @@ spec:
     - kind: Secret
       name: vault-shared-sut
       valuesKey: values.yml
+    - kind: Secret
+      name: vault-shared-cbf
+      valuesKey: values.yml
