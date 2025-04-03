@@ -8,15 +8,14 @@ spec:
   interval: 1m0s
   storageNamespace: dish-lmc-ska001
   targetNamespace: dish-lmc-ska001
-  releaseName: ska063-archiver
-  kubeConfig:
-    secretRef:
-      key: values.yml
-      name: vault-midaa-ska001-kubeconfig
+  releaseName: ska001-archiver
   valuesFrom:
     - kind: Secret
       name: vault-shared-ska-tango-archiver
       valuesKey: values.yml
     - kind: Secret
       name: vault-midaa-dish-ska001-archiver
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-midaa-dish-ska001-archiver-credentials
       valuesKey: values.yml
