@@ -32,3 +32,18 @@ spec:
     - kind: Secret
       name: vault-shared-cbf
       valuesKey: values.yml
+    - kind: Secret
+      name: vault-shared-global
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-shared-sdp
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-shared-tango
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-shared-tmc
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-shared-utils
+      valuesKey: values.yml
