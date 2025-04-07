@@ -23,3 +23,12 @@ spec:
     - kind: Secret
       name: vault-midaa-cbf
       valuesKey: values.yml
+    - kind: Secret
+      name: vault-midaa-global
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-midaa-sdp
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-midaa-tmc
+      valuesKey: values.yml
