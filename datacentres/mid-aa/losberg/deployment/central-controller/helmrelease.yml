@@ -11,9 +11,6 @@ spec:
   releaseName: midaiv-aa05
   valuesFrom:
     - kind: Secret
-      name: vault-shared-dish
-      valuesKey: values.yml
-    - kind: Secret
       name: vault-midaa-losberg-centralcontroller
       valuesKey: values.yml
     - kind: Secret
