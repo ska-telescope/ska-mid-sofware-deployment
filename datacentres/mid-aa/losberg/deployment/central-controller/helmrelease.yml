@@ -14,15 +14,15 @@ spec:
       name: vault-shared-dish
       valuesKey: values.yml
     - kind: Secret
-      name: vault-midaa-kapb
+      name: vault-midaa-losberg-centralcontroller
       valuesKey: values.yml
     - kind: Secret
       name: vault-car-publisher
       valuesKey: publisher_password
       targetPath: global.raw_user_pass
     - kind: Secret
-      name: vault-midaa-kapb-cbf
+      name: vault-midaa-losberg-cbf
       valuesKey: values.yml
     - kind: Secret
-      name: vault-midaa-kapb-powerswitch-creds
+      name: vault-midaa-losberg-powerswitch-creds
       valuesKey: values.yml
