@@ -33,6 +33,9 @@ spec:
       name: vault-midaa-losberg-tmc
       valuesKey: values.yml
     - kind: Secret
+      name: vault-midaa-losberg-tmc
+      valuesKey: array-assembly-aa05.yml
+    - kind: Secret
       name: vault-midaa-kapb-cbf
       valuesKey: values.yml
     - kind: Secret
