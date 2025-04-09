@@ -10,16 +10,29 @@ spec:
   targetNamespace: ska-mid-central-controller
   releaseName: midaiv-aa05
   valuesFrom:
-    - kind: Secret
-      name: vault-midaa-losberg-centralcontroller
-      valuesKey: values.yml
+    # Below is commented out to not be used but left in for a quick return
+    # - kind: Secret
+    #   name: vault-midaa-losberg-centralcontroller
+    #   valuesKey: values.yml
     - kind: Secret
       name: vault-car-publisher
       valuesKey: publisher_password
       targetPath: global.raw_user_pass
+    - kind: Secret
+      name: vault-midaa-losberg-global
+      valuesKey: values.yml
     - kind: Secret
       name: vault-midaa-losberg-cbf
       valuesKey: values.yml
     - kind: Secret
       name: vault-midaa-losberg-powerswitch-creds
       valuesKey: values.yml
+    - kind: Secret
+      name: vault-midaa-losberg-sdp
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-midaa-losberg-tmc
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-midaa-losberg-tmc
+      valuesKey: array-assembly-aa05.yml
