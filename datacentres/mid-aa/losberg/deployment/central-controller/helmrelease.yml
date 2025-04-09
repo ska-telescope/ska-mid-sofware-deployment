@@ -32,3 +32,9 @@ spec:
     - kind: Secret
       name: vault-midaa-losberg-tmc
       valuesKey: values.yml
+    - kind: Secret
+      name: vault-midaa-kapb-cbf
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-midaa-kapb-powerswitch-creds
+      valuesKey: values.yml
