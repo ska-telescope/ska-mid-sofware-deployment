@@ -24,32 +24,14 @@ spec:
       name: vault-midaa-losberg-cbf
       valuesKey: values.yml
     - kind: Secret
-      name: vault-midaa-losberg-sdp
-      valuesKey: values.yml
-    - kind: Secret
-      name: vault-midaa-losberg-tmc
-      valuesKey: values.yml
-    - kind: Secret
-      name: vault-midaa-losberg-tmc
-      valuesKey: array-assembly-aa05.yml
-    - kind: Secret
-      name: vault-midaa-losberg-global
-      valuesKey: values.yml
-    - kind: Secret
-      name: vault-midaa-losberg-cbf
-      valuesKey: values.yml
-    - kind: Secret
-      name: vault-midaa-losberg-sdp
-      valuesKey: values.yml
-    - kind: Secret
-      name: vault-midaa-losberg-tmc
-      valuesKey: values.yml
-    - kind: Secret
-      name: vault-midaa-losberg-tmc
-      valuesKey: array-assembly-aa05.yml
-    - kind: Secret
-      name: vault-midaa-losberg-cbf
-      valuesKey: values.yml
-    - kind: Secret
       name: vault-midaa-losberg-powerswitch-creds
       valuesKey: values.yml
+    - kind: Secret
+      name: vault-midaa-losberg-sdp
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-midaa-losberg-tmc
+      valuesKey: values.yml
+    - kind: Secret
+      name: vault-midaa-losberg-tmc
+      valuesKey: array-assembly-aa05.yml
