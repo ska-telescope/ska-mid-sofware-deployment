@@ -30,13 +30,13 @@ spec:
       name: vault-shared-sut
       valuesKey: values.yml
     - kind: Secret
+      name: vault-shared-mid-global
+      valuesKey: values.yml
+    - kind: Secret
       name: vault-shared-mid-cbf
       valuesKey: values.yml
     - kind: Secret
       name: vault-shared-mid-csp
-    - kind: Secret
-      name: vault-shared-mid-global
-      valuesKey: values.yml
     - kind: Secret
       name: vault-shared-mid-sdp
       valuesKey: values.yml

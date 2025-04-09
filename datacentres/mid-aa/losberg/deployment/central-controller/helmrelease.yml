@@ -21,10 +21,10 @@ spec:
       valuesKey: publisher_password
       targetPath: global.raw_user_pass
     - kind: Secret
-      name: vault-midaa-losberg-cbf
+      name: vault-midaa-losberg-global
       valuesKey: values.yml
     - kind: Secret
-      name: vault-midaa-losberg-global
+      name: vault-midaa-losberg-cbf
       valuesKey: values.yml
     - kind: Secret
       name: vault-midaa-losberg-sdp
