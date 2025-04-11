@@ -5,11 +5,11 @@ metadata:
   name: ska036-dish
   namespace: flux-services
 spec:
-  interval: 10m0s
+  interval: 1m0s
   sourceRef:
     kind: GitRepository
     name: ska-mid-helmreleases
   path: ./datacentres/mid-itf/ska036/deployment/dish
   prune: true
-  wait: true
-  timeout: 5m0s
+  wait: false
+  timeout: 1m0s

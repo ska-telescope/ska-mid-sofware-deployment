@@ -7,7 +7,8 @@ metadata:
 spec:
   storageNamespace: dish-lmc-ska036
   targetNamespace: dish-lmc-ska036
-  releaseName: dishaiv-miditf # this should remain commented unless we realise we need a separation on per-dish releases.
+  releaseName: mid-aiv-dish-ska036 # this should remain commented unless we realise we need a separation on per-dish releases.
+  interval: 1m0s
   kubeConfig:
     secretRef:
       key: values.yml
@@ -20,9 +21,5 @@ spec:
       name: vault-miditf-dish-ska036
       valuesKey: values.yml
     - kind: Secret
-      name: vault-car-publisher
-      valuesKey: publisher_password
-      targetPath: global.raw_user_pass
-    - kind: Secret
-      name: vault-miditf-ska036-kubeconfig
+      name: vault-miditf-dish-ska036-no-hw
       valuesKey: values.yml
